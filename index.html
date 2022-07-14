@@ -21,7 +21,43 @@
     <!-- Шапка -->
     <header class="page-header">
       <div class="container main-nav">
-        <a class="logo" href=""><span class="logo__text">Web</span>Studio</a>
+        <div class="menu-wrapper">
+          <a class="logo" href=""><span class="logo__text">Web</span>Studio</a>
+          <button
+            class="menu-button"
+            type="button"
+            data-menu-button
+            aria-label="Переключатель мобильного меню"
+            aria-controls="menu-container"
+            aria-expanded="false"
+          >
+            <svg class="menu-button__icon" width="40" height="40">
+              <use class="menu-button__menu" href="./images/icons-sprite.svg#icon-menu"></use>
+              <use class="menu-button__cross" href="./images/icons-sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="pages_list">
+              <li class="pages_list__item">
+                <a href="" class="pages_list__link pages_list__link --current">Студия</a>
+              </li>
+              <li class="pages_list__item">
+                <a href="./portfolio.html" class="pages_list__link">Портфолио</a>
+              </li>
+              <li class="pages_list__item">
+                <a href="" class="pages_list__link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="nav_list">
+              <li class="nav_list__item">
+                <a href="mailto:info@devstudio.com" class="nav_list__link">info@devstudio.com</a>
+              </li>
+              <li class="nav_list__item">
+                <a href="tel:+380961111111" class="nav_list__link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <nav>
           <ul class="site-nav list">
             <li class="site-nav__item">
@@ -482,5 +518,6 @@
     </div>
     <!-- Скрипт -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
