@@ -126,11 +126,8 @@
 
 .custom-checkbox__icon {
   @include centeredFlex();
-  position: absolute;
-  bottom: 122px;
-  left: 52px;
-  width: 16px;
-  height: 15px;
+  min-width: 16px;
+  max-height: 15px;
   border: 2px solid black;
   border-radius: 4px;
 }
@@ -138,22 +135,35 @@
 .custom-checkbox__input:checked ~ .custom-checkbox__icon {
   background-image: url('../images/icon-check.svg');
   background-size: contain;
+  background-repeat: no-repeat;
   background-color: $accent-color;
   border-color: $accent-color;
 }
 
 .custom-checkbox {
-  display: block;
-  margin-left: 25px;
+  display: flex;
+  justify-content: space-around;
   margin-bottom: 30px;
   margin-top: 20px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
 
   color: $primary-text-color;
-  text-align: center;
 }
 
 .custom-checkbox__text {
   color: $accent-color;
 }
+
+// .custom-checkbox {
+//   display: block;
+//   margin-left: 25px;
+//   margin-bottom: 30px;
+//   margin-top: 20px;
+//   font-size: 14px;
+//   line-height: 1.71;
+
+//   color: $primary-text-color;
+//   text-align: center;
+// }
