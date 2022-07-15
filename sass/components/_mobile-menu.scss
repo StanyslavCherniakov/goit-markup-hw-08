@@ -1,0 +1,128 @@
+@media screen and (max-width: 767px) {
+  .menu-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-button {
+    @include centeredFlex();
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    color: #000000;
+
+    &__icon {
+      fill: currentColor;
+      z-index: 9;
+    }
+
+    &__cross {
+      display: none;
+    }
+
+    .is-open &__cross {
+      display: block;
+    }
+
+    .is-open &__menu {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    background-color: $white-color;
+    width: 100%;
+    height: 100vh;
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.is-open {
+      transform: translateY(0);
+    }
+  }
+
+  .pages-list {
+    margin-bottom: auto;
+
+    &__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    &__link {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+
+      color: $secondary-text-color;
+      text-decoration: none;
+    }
+
+    &__link--current {
+      color: $accent-color;
+    }
+  }
+
+  .nav-list {
+    margin-bottom: 64px;
+
+    &__item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    &__link.tell {
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+
+      color: $accent-color;
+      text-decoration: none;
+    }
+
+    &__link.mail {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.16;
+      letter-spacing: 0.02em;
+
+      color: $primary-text-color;
+      text-decoration: none;
+    }
+  }
+
+  .social-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item:not(:first-child) {
+      padding-left: 10px;
+    }
+
+    &__item:not(:last-child) {
+      padding-right: 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
+    &__link {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.22;
+      letter-spacing: 0.02em;
+
+      color: $accent-color;
+      text-decoration: none;
+    }
+  }
+}
