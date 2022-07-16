@@ -297,7 +297,6 @@ img {
   }
   .social-list {
     display: flex;
-    flex-wrap: wrap;
   }
   .social-list__item:not(:first-child) {
     padding-left: 10px;
