@@ -91,6 +91,12 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    flex-basis: calc((100% - 6 * 15px) / 3);
+  }
+}
+
 // projects__list {
 //   display: flex;
 //   flex-wrap: wrap;
