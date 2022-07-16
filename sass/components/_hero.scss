@@ -53,6 +53,19 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 650px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+
+  .hero__wrapper {
+    padding: 200px 0;
+    max-width: 1600px;
+  }
+}
+
 // .hero__wrapper {
 //   padding: 200px 0;
 //   max-width: 1600px;

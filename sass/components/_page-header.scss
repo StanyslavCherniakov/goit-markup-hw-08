@@ -106,16 +106,31 @@
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  .auth-nav__icon-mail {
+    width: 14px;
+    height: 10px;
+  }
+
+  .auth-nav__icon-tell {
+    width: 10px;
+    height: 14px;
+  }
 }
 
-.auth-nav__icon-mail {
-  width: 14px;
-  height: 10px;
-}
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    margin-left: 93px;
+  }
 
-.auth-nav__icon-tell {
-  width: 10px;
-  height: 14px;
+  .auth-nav {
+    flex-direction: row;
+  }
+
+  .auth-nav__item:not(:last-child) {
+    margin-bottom: 0px;
+    margin-right: 30px;
+  }
 }
 
 // ====================LINE=============
