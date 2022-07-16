@@ -109,12 +109,21 @@
   }
 }
 
-// .page-footer__container {
-//   @include centeredFlex();
-//   flex-direction: column;
+@media screen and (min-width: 1200px) {
+  .footer-wrapper {
+    margin-bottom: 0px;
+  }
 
-//
-// }
-// .footer-social {
-//   margin-left: 70px;
-// }
+  .page-footer__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__container {
+    text-align: start;
+  }
+
+  .footer-social {
+    margin-left: 85px;
+  }
+}
