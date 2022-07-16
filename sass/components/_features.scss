@@ -28,11 +28,13 @@
   color: $primary-text-color;
 }
 
-.features__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features__list {
     display: flex;
     flex-wrap: wrap;
@@ -53,6 +55,19 @@
     line-height: 1.14;
     text-transform: uppercase;
     text-align: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__list {
+    display: flex;
+  }
+
+  .features__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .features {
+    padding-top: 94px;
   }
 }
 
