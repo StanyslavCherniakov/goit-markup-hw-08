@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="Сайт вебстудии" />
+    <title>Портфолио</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -108,19 +109,31 @@
           <h1 class="visually-hidden">Наши проекты</h1>
           <ul class="list button-list">
             <li class="button-list__item">
-              <button type="button" class="button-list__btn button-list__btn--active">Все</button>
+              <button
+                type="button"
+                class="button-list__btn button-list__btn--active"
+                aria-label="Все"
+              >
+                Все
+              </button>
             </li>
             <li class="button-list__item">
-              <button type="button" class="button-list__btn">Веб-сайты</button>
+              <button type="button" class="button-list__btn" aria-label="Веб-сайты">
+                Веб-сайты
+              </button>
             </li>
             <li class="button-list__item">
-              <button type="button" class="button-list__btn">Приложения</button>
+              <button type="button" class="button-list__btn" aria-label="Приложения">
+                Приложения
+              </button>
             </li>
             <li class="button-list__item">
-              <button type="button" class="button-list__btn">Дизайн</button>
+              <button type="button" class="button-list__btn" aria-label="Дизайн">Дизайн</button>
             </li>
             <li class="button-list__item">
-              <button type="button" class="button-list__btn">Маркетинг</button>
+              <button type="button" class="button-list__btn" aria-label="Маркетинг">
+                Маркетинг
+              </button>
             </li>
           </ul>
           <ul class="list projects__list">
@@ -483,7 +496,7 @@
             <span class="footer-form__text">Подпишитесь на рассылку</span>
             <input class="footer-form__input" type="email" name="email" placeholder="E-mail" />
           </label>
-          <button class="footer-form__btn" type="submit">
+          <button class="footer-form__btn" aria-label="Подписаться" type="submit">
             Подписаться
             <svg width="24" height="24">
               <use href="./images/icons-sprite.svg#icon-telegram"></use>
