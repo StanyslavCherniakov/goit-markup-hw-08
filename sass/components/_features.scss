@@ -58,6 +58,10 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .features__title {
+    text-align: start;
+  }
+
   .features__list {
     display: flex;
   }
